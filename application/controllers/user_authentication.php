@@ -168,7 +168,13 @@ public function booking()
 
 public function makebooking(){
 
-    echo "<h1>訂票成功 恭喜你優 ^.^!</h1>";
+$AA = $_POST['variableX'];
+$BB = $_POST['variableY'];
+$CC = array($AA,$BB);
+
+echo json_encode($CC);
+
+
 }
 
 }
